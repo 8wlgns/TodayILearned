@@ -1,0 +1,14 @@
+Ansible 간단리뷰
+ - 각 서버들에 필요한 설치 및 설정 파일들을 자동으로 쉽게 설치해준다.
+ - https://docs.ansible.com/
+ - playbook 
+   - role1
+   - role2
+      - task1
+        - file down
+      - task2
+        - cp src to dest
+  - ...
+- 구조는 이렇게 되어 있다.
+- playbook > role > task 이렇게 인데, task 는 할일의 가장 작은 단위, role 은 특정 task 를 모아둔 중간 단위, 여러 role 들을 구성해 둔 playbook 이렇게 나뉜다.
+ 
